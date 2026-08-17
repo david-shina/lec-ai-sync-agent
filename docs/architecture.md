@@ -123,7 +123,3 @@ The diagram shows four color-coded zones:
 
 Red dashed arrows mark failure-mode edges (SourceOffline, computed_tie). Regular arrows are the happy-path control flow. Each arrow has a terse label naming the function or condition.
 
-To regenerate the scene JSON after editing the architecture description:
-```bash
-python scripts/make_excalidraw_diagram.py
-```
