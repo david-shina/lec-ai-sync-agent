@@ -1,0 +1,1 @@
+{"idx": 0, "ts": "2026-08-14T03:47:33.502348+00:00", "node": "step_executor", "payload": {"step": 0, "tool": "query_video_metadata", "result": {"duration": 12.0, "segments": [{"start": 0.0, "end": 4.0, "type": "dialogue"}, {"start": 4.0, "end": 8.0, "type": "dialogue"}, {"start": 8.0, "end": 12.0, "type": "mixed"}]}}}

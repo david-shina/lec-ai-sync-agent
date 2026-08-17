@@ -1,0 +1,504 @@
+{
+  "conflict": {
+    "name": "Two conflicts in dialogue segments: duck fires early (0.2s) and duck fires late (0.5s)",
+    "caption_service": "online",
+    "audio_service": "online",
+    "seed_cache": false,
+    "captions": [
+      {
+        "id": "c1",
+        "text": "Welcome to the show",
+        "start": 1.0,
+        "end": 3.5
+      },
+      {
+        "id": "c2",
+        "text": "Today we talk about agents",
+        "start": 5.2,
+        "end": 8.0
+      },
+      {
+        "id": "c3",
+        "text": "Let's see a demo",
+        "start": 9.0,
+        "end": 11.0
+      },
+      {
+        "id": "c4",
+        "text": "And that's our show",
+        "start": 15.0,
+        "end": 17.5
+      }
+    ],
+    "ducks": [
+      {
+        "id": "d1",
+        "start": 1.0,
+        "end": 3.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d2",
+        "start": 5.0,
+        "end": 8.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d3",
+        "start": 9.5,
+        "end": 11.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d4",
+        "start": 15.0,
+        "end": 17.5,
+        "gain_reduction_db": -12
+      }
+    ],
+    "segment_overrides": {
+      "duration": 20.0,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "type": "dialogue"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "type": "music"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "type": "dialogue"
+        }
+      ]
+    }
+  },
+  "unresolvable_tie": {
+    "name": "Conflicts sit in a mixed segment; symmetric weights cause a tie -> Failure B",
+    "caption_service": "online",
+    "audio_service": "online",
+    "seed_cache": false,
+    "captions": [
+      {
+        "id": "c1",
+        "text": "Welcome to the show",
+        "start": 1.0,
+        "end": 3.5
+      },
+      {
+        "id": "c2",
+        "text": "Today we talk about agents",
+        "start": 5.0,
+        "end": 7.5
+      },
+      {
+        "id": "c3",
+        "text": "Let's see a demo",
+        "start": 9.1,
+        "end": 11.0
+      },
+      {
+        "id": "c4",
+        "text": "And that's our show",
+        "start": 15.0,
+        "end": 17.5
+      }
+    ],
+    "ducks": [
+      {
+        "id": "d1",
+        "start": 1.0,
+        "end": 3.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d2",
+        "start": 5.2,
+        "end": 7.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d3",
+        "start": 9.0,
+        "end": 11.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d4",
+        "start": 15.0,
+        "end": 17.5,
+        "gain_reduction_db": -12
+      }
+    ],
+    "segment_overrides": {
+      "duration": 20.0,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "type": "mixed"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "type": "dialogue"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "type": "dialogue"
+        }
+      ]
+    }
+  },
+  "source_offline_cache_fresh": {
+    "name": "Caption service offline; cache is fresh -> degraded fallback with cached captions",
+    "caption_service": "offline",
+    "audio_service": "online",
+    "seed_cache": true,
+    "cache_freshness": "fresh",
+    "captions": [
+      {
+        "id": "c1",
+        "text": "Welcome to the show",
+        "start": 1.0,
+        "end": 3.5
+      },
+      {
+        "id": "c2",
+        "text": "Today we talk about agents",
+        "start": 5.2,
+        "end": 8.0
+      },
+      {
+        "id": "c3",
+        "text": "Let's see a demo",
+        "start": 9.0,
+        "end": 11.0
+      },
+      {
+        "id": "c4",
+        "text": "And that's our show",
+        "start": 15.0,
+        "end": 17.5
+      }
+    ],
+    "ducks": [
+      {
+        "id": "d1",
+        "start": 1.0,
+        "end": 3.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d2",
+        "start": 5.0,
+        "end": 8.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d3",
+        "start": 9.5,
+        "end": 11.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d4",
+        "start": 15.0,
+        "end": 17.5,
+        "gain_reduction_db": -12
+      }
+    ],
+    "segment_overrides": {
+      "duration": 20.0,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "type": "dialogue"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "type": "dialogue"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "type": "dialogue"
+        }
+      ]
+    }
+  },
+  "source_offline_cache_stale": {
+    "name": "Caption service offline; cache valid but stale -> degraded fallback, staleness flagged",
+    "caption_service": "offline",
+    "audio_service": "online",
+    "seed_cache": true,
+    "cache_freshness": "stale",
+    "captions": [
+      {
+        "id": "c1",
+        "text": "Welcome to the show",
+        "start": 1.0,
+        "end": 3.5
+      },
+      {
+        "id": "c2",
+        "text": "Today we talk about agents",
+        "start": 5.2,
+        "end": 8.0
+      },
+      {
+        "id": "c3",
+        "text": "Let's see a demo",
+        "start": 9.0,
+        "end": 11.0
+      },
+      {
+        "id": "c4",
+        "text": "And that's our show",
+        "start": 15.0,
+        "end": 17.5
+      }
+    ],
+    "ducks": [
+      {
+        "id": "d1",
+        "start": 1.0,
+        "end": 3.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d2",
+        "start": 5.0,
+        "end": 8.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d3",
+        "start": 9.5,
+        "end": 11.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d4",
+        "start": 15.0,
+        "end": 17.5,
+        "gain_reduction_db": -12
+      }
+    ],
+    "segment_overrides": {
+      "duration": 20.0,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "type": "dialogue"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "type": "dialogue"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "type": "dialogue"
+        }
+      ]
+    }
+  },
+  "source_offline_cache_empty": {
+    "name": "Caption service offline; cache absent -> export_no_captions, no subtitles burned",
+    "caption_service": "offline",
+    "audio_service": "online",
+    "seed_cache": false,
+    "captions": [
+      {
+        "id": "c1",
+        "text": "Welcome to the show",
+        "start": 1.0,
+        "end": 3.5
+      },
+      {
+        "id": "c2",
+        "text": "Today we talk about agents",
+        "start": 5.2,
+        "end": 8.0
+      },
+      {
+        "id": "c3",
+        "text": "Let's see a demo",
+        "start": 9.0,
+        "end": 11.0
+      },
+      {
+        "id": "c4",
+        "text": "And that's our show",
+        "start": 15.0,
+        "end": 17.5
+      }
+    ],
+    "ducks": [
+      {
+        "id": "d1",
+        "start": 1.0,
+        "end": 3.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d2",
+        "start": 5.0,
+        "end": 8.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d3",
+        "start": 9.5,
+        "end": 11.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d4",
+        "start": 15.0,
+        "end": 17.5,
+        "gain_reduction_db": -12
+      }
+    ],
+    "segment_overrides": {
+      "duration": 20.0,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "type": "dialogue"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "type": "dialogue"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "type": "dialogue"
+        }
+      ]
+    }
+  },
+  "source_offline_cache_signature_mismatch": {
+    "name": "Caption service offline; cache signature mismatch -> refuse cache, export_no_captions",
+    "caption_service": "offline",
+    "audio_service": "online",
+    "seed_cache": true,
+    "cache_freshness": "fresh",
+    "corrupt_cache": "signature",
+    "captions": [
+      {
+        "id": "c1",
+        "text": "Welcome to the show",
+        "start": 1.0,
+        "end": 3.5
+      },
+      {
+        "id": "c2",
+        "text": "Today we talk about agents",
+        "start": 5.2,
+        "end": 8.0
+      },
+      {
+        "id": "c3",
+        "text": "Let's see a demo",
+        "start": 9.0,
+        "end": 11.0
+      },
+      {
+        "id": "c4",
+        "text": "And that's our show",
+        "start": 15.0,
+        "end": 17.5
+      }
+    ],
+    "ducks": [
+      {
+        "id": "d1",
+        "start": 1.0,
+        "end": 3.5,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d2",
+        "start": 5.0,
+        "end": 8.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d3",
+        "start": 9.5,
+        "end": 11.0,
+        "gain_reduction_db": -12
+      },
+      {
+        "id": "d4",
+        "start": 15.0,
+        "end": 17.5,
+        "gain_reduction_db": -12
+      }
+    ],
+    "segment_overrides": {
+      "duration": 20.0,
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "type": "dialogue"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "type": "dialogue"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "type": "dialogue"
+        }
+      ]
+    }
+  }
+}
